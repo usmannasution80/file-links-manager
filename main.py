@@ -1,13 +1,14 @@
+from app import _
 def main():
-  title = 'FILE LINKS MANAGER'
+  title = _('title')
   sep_len = len(title)
   print(
     ('=' * sep_len),
     title,
     ('=' * sep_len),
-    '1. List',
-    '2. Insert',
-    '3. Exit',
+    _('numb_list', {'numb' : 1}),
+    _('numb_insert', {'numb' : 2}),
+    _('numb_exit', {'numb' : 3}),
     ('=' * sep_len),
     'Your choice : ',
     sep = '\n'
