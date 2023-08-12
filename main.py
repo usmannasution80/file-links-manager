@@ -1,4 +1,6 @@
-from app import _
+from _ import _
+from insert import insert
+
 def main():
   title = _('title')
   sep_len = len(title)

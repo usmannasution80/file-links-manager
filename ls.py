@@ -1,11 +1,8 @@
-from app import db_file
+from app import db_file, init_db
 
 def ls():
 
-  if not isfile(db_file):
-    file = open(db_file, 'w')
-    file.write('[]');
-    file.close()
+  init_db()
 
   file = open(db_file, 'r')
   data = json.loads(file.read())
